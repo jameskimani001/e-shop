@@ -1,0 +1,560 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: orangered; 
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff; /* Link color */
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* App Styles */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #1e1e2f; /* Dark background for header */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Header Styles */
+header {
+  background-color: #007bff; /* Header background color */
+  color: white;
+  padding: 5px 0; /* Adjusted padding for header */
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  position: relative;
+  display: inline;
+  margin-right: 15px; /* Spacing between navigation items */
+}
+
+nav a {
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 18px;
+}
+
+nav a:hover {
+  background-color: #f1c4f1; /* White hover effect */
+}
+
+/* Product List Styles */
+.product-list {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create columns */
+  gap: 20px; /* Space between grid items */
+  max-width: 1200px; /* Limit the width of the container */
+  margin: 20px auto; /* Center the container */
+  padding: 0 15px; /* Add padding to the sides */
+}
+
+/* Product Card Styles */
+.product-card {
+  background-color: rgb(255, 255, 255); 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  padding: 10px; 
+  text-align: center;
+  transition: transform 0.2s; /* Smooth scale effect */
+  margin-bottom: 20px;
+}
+
+.product-card img {
+  max-width: 100%; /* Adjust image size to fit card */
+  height: auto;
+  border-radius: 10px; 
+  margin-bottom: 15px;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+  background-color: #5c00b3;
+}
+
+.product-card h3 {
+  margin: 15px 0; 
+  font-size: 1.25rem; 
+  color: #333; 
+}
+
+.product-card p {
+  margin: 10px 0; 
+  font-size: 1rem; 
+  color: #555;
+}
+
+.product-card button {
+  background-color: #007bff; /* Blue button */
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem; 
+}
+
+.product-card button:hover {
+  background-color: #a7b300f1; 
+}
+
+/* Admin Page Styles */
+.admin-page {
+  background: rgb(55, 194, 0);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Center the admin panel */
+  max-width: 500px; /* Limit the width of the container */
+}
+
+.admin-page h2 {
+  margin-bottom: 10px;
+}
+
+.admin-page input,
+.admin-page textarea {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.admin-page button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Blue for add button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+    padding: 12px 20px;
+}
+
+.admin-page button:hover {
+  background-color: #b30095; 
+  border-radius: 5px;
+    padding: 12px 20px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333; /* Dark footer */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Cart Styles */
+.cart {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Limit the width of the container */
+  margin: 20px auto; /* Center the cart panel */
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart h4 {
+  margin: 0;
+}
+
+.cart button {
+  background-color: #dc3545; /* Red for remove button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.cart h3 {
+  margin-top: 20px;
+  color: #333; /* Color for cart total */
+}
+
+.cart button.clear-cart {
+  background-color: #ffc107; /* Yellow for clear cart button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart button.clear-cart:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+}
+/* Product Card Styles */
+.product-card {
+  background-color: rgb(255, 255, 255); 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  padding: 10px; 
+  text-align: center;
+  transition: transform 0.2s; /* Smooth scale effect */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items */
+  height: 380px; /* Increased height for more space */
+}
+
+/* Adjusted Image Styles */
+.product-card img {
+  max-width: 100%; /* Adjust image size to fit card */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Cover image within the box */
+  border-radius: 10px; 
+  margin-bottom: 15px;
+}
+
+/* Product Actions Styles */
+.product-actions {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  margin-top: auto; /* Push actions to the bottom */
+  width: 100%; /* Take full width of the card */
+}
+
+.add-to-cart-button,
+.remove-from-cart-button {
+  padding: 10px;
+  margin: 5px 0; /* Space between buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Consistent font size */
+  width: 100%; /* Make buttons full width */
+}
+
+/* Button Specific Styles */
+.add-to-cart-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+}
+
+.remove-from-cart-button {
+  background-color: #f44336; /* Red background */
+  color: white; /* White text */
+}
+
+.view-details-link {
+  text-decoration: none;
+  color: blue; /* Link color */
+  margin-top: 10px; /* Space above link */
+  font-size: 1rem; /* Consistent font size */
+}
+
+/* Optional: Button Hover Effects */
+.add-to-cart-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.remove-from-cart-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+/* Updated Product Card Styles */
+.product-card {
+  background-color: rgb(255, 255, 255); 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  padding: 15px; /* Increased padding for more space */
+  text-align: center;
+  transition: transform 0.2s; /* Smooth scale effect */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items */
+  height: 450px; /* Increased height for more space */
+}
+
+/* Adjusted Image Styles */
+.product-card img {
+  max-width: 100%; /* Adjust image size to fit card */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Cover image within the box */
+  border-radius: 10px; 
+  margin-bottom: 15px;
+}
+
+/* Product Details Styles */
+.product-details {
+  flex: 1; /* Allow details to take available space */
+  display: flex;
+  flex-direction: column; /* Stack details vertically */
+  justify-content: center; /* Center align details */
+  padding: 10px 0; /* Padding around details */
+}
+
+/* Product Actions Styles */
+.product-actions {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  margin-top: auto; /* Push actions to the bottom */
+  width: 100%; /* Take full width of the card */
+}
+
+/* Button Specific Styles */
+.add-to-cart-button,
+.remove-from-cart-button {
+  padding: 10px;
+  margin: 5px 0; /* Space between buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Consistent font size */
+  width: 100%; /* Make buttons full width */
+}
+
+/* Button Hover Effects */
+.add-to-cart-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.remove-from-cart-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Optional: Link Styles */
+.view-details-link {
+  text-decoration: none;
+  color: blue; /* Link color */
+  margin-top: 10px; /* Space above link */
+  font-size: 1rem; /* Consistent font size */
+}
+/* Footer Section Styles */
+footer {
+  background-color: #333; /* Dark background for footer */
+  color: white; /* White text */
+  text-align: center; /* Center text */
+  padding: 40px 20px; /* Add padding for spacing */
+  font-size: 1rem; /* Set default font size */
+}
+
+/* Newsletter Section Styles */
+.newsletter {
+  margin-bottom: 30px; /* Space below newsletter section */
+}
+
+.newsletter h2 {
+  font-size: 1.5rem; /* Larger font size for heading */
+  margin-bottom: 15px; /* Space below the heading */
+  color: #fff; /* White color for the heading */
+}
+
+.newsletter .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto; /* Center the box */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #444; /* Slightly lighter background for the box */
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 100%; /* Take up full width */
+  max-width: 400px; /* Limit width of the input field */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-right: 10px; /* Space between input and button */
+}
+
+.newsletter input[type="email"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+}
+
+.newsletter .btn {
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Contact Details Section Styles */
+.contact-details {
+  margin-top: 40px; /* Space above the contact details */
+  background-color: #444; /* Slightly lighter background for this section */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-details h3 {
+  font-size: 1.25rem; /* Slightly larger font size for the heading */
+  margin-bottom: 10px; /* Space below the heading */
+  color: #fff; /* White color for the heading */
+}
+
+.contact-details p {
+  font-size: 1rem;
+  margin: 8px 0; /* Space between contact info */
+}
+
+.contact-details a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s;
+}
+
+.contact-details a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Bottom Text */
+footer p {
+  margin-top: 20px; /* Space above the copyright text */
+  font-size: 0.9rem; /* Smaller font size for copyright */
+  color: #ccc; /* Light gray text for copyright */
+}
+/* Header CSS */
+.header {
+  display: flex;
+  justify-content: space-between;  /* Ensure that the logo and nav are spaced out */
+  align-items: center;
+  background-color: #035feb;
+  padding: 10px 20px;
+  padding-top: 3px;
+  
+}
+
+.header-logo {
+  width: 150px;  /* Adjust the width of the logo */
+  height: auto;  /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits the container */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .header-logo {
+      width: 120px;  /* Make logo smaller on smaller screens */
+  }
+
+  nav ul {
+      flex-direction: column;  /* Stack navigation items vertically on smaller screens */
+      align-items: center;  /* Center items when stacked */
+  }
+}
+
+/* Navigation Styles */
+nav {
+  flex-grow: 1;  /* Allow the nav to take up available space */
+  display: flex;
+  justify-content: space-evenly;  /* Evenly distribute the nav items across the space */
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;  /* Space between nav items */
+  margin: 0;
+  padding: 0;
+  width: 100%;  /* Make sure the ul takes full width */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;  /* Add padding for better click area */
+  transition: background-color 0.3s;  /* Smooth transition for background hover effect */
+  border-radius: 5px;  /* Add rounded corners to the links */
+}
+
+nav a:hover {
+  background-color: #555;  /* Change background color on hover */
+}
+
+/* Optional: Add a hover effect for the entire header for more polish */
+.header:hover {
+  background-color: #c2b00d;  /* Change background on hover */
+}

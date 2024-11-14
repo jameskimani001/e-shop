@@ -1,0 +1,77 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Iphone 12plus",
+      "price": 699.99,
+      "description": "Latest model smartphone with high-resolution display, powerful processor, and excellent camera.",
+      "image": "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "Phones",
+      "rating": 4.5
+    },
+    {
+      "id": "2",
+      "name": "Macbook pro 16 max ",
+      "price": 1299.99,
+      "description": "High-performance laptop with Intel i7 processor, 16GB RAM, and 512GB SSD.",
+      "image": "https://aklaptops.pk/wp-content/uploads/2024/05/lenovo-ideapad-pro-5i-header-scaled-1-1024x576.jpg",
+      "category": "Laptops",
+      "rating": 4.7
+    },
+    {
+      "id": "3",
+      "name": "Wireless Headphones",
+      "price": 199.99,
+      "description": "Comfortable over-ear headphones with noise-cancellation and 30-hour battery life.",
+      "image": "https://cdn.mos.cms.futurecdn.net/qzJ4JtDjkfjdqqNebQS7kk-1200-80.jpg",
+      "category": "Accessories",
+      "rating": 4.2
+    },
+    {
+      "id": "4",
+      "name": " 4K Ultra HD TV",
+      "price": 799.99,
+      "description": "65-inch 4K Ultra HD Smart TV with stunning picture quality and built-in streaming apps.",
+      "image": "https://www.shutterstock.com/image-photo/televisions-consumer-electronics-store-minsk-600nw-2274387191.jpg",
+      "category": "Televisions",
+      "rating": 4.8
+    },
+    {
+      "id": "5",
+      "name": "Smartwatch Rolex 2.0",
+      "price": 249.99,
+      "description": "Feature-rich smartwatch with fitness tracking, heart rate monitor, and customizable watch faces.",
+      "image": "https://m.media-amazon.com/images/I/81HLSrufcTL._AC_UY350_.jpg",
+      "category": "Wearables",
+      "rating": 4.3
+    },
+    {
+      "id": "6",
+      "name": "Bluetooth Speaker",
+      "price": 89.99,
+      "description": "Portable Bluetooth speaker with rich sound quality and waterproof design.",
+      "image": "https://images.pexels.com/photos/1034653/pexels-photo-1034653.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "Accessories",
+      "rating": 4.6
+    },
+    {
+      "id": "7",
+      "name": "Play station 5",
+      "price": 499.99,
+      "description": "Next-gen gaming console with 4K gaming capabilities and a large library of games.",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/231222161743-ps5-slim-hands-on-cnnu-6.jpg?q=w_1110,c_fill",
+      "category": "Gaming",
+      "rating": 4.9
+    },
+    {
+      "id": "8",
+      "name": "External Hard Drive 1TB",
+      "price": 79.99,
+      "description": "1TB external hard drive for extra storage and easy data transfer.",
+      "image": "https://images.pexels.com/photos/17924342/pexels-photo-17924342/free-photo-of-hard-external-disk.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "Storage",
+      "rating": 4.4
+    }
+    
+  ]
+}
