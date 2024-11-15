@@ -8,7 +8,7 @@ const ProductDetails = () => {
 
     useEffect(() => {
         const fetchProduct = async () => {
-            const response = await axios.get(`http://localhost:5000/products/${id}`);
+            const response = await axios.get(`https://e-shop-qhzb.onrender.com/products`);
             setProduct(response.data);
         };
         fetchProduct();
